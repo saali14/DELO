@@ -1,0 +1,27 @@
+name: DELO
+channels:
+  - nvidia
+  - pytorch
+  - pytorch3d
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - nvidia::cudatoolkit=11.3
+  - pytorch::pytorch=1.12.1
+  - torchvision
+  - torchmetrics
+  - pytorch3d::pytorch3d
+  - lightning
+  - numpy
+  - tqdm
+  - pandas
+  - plyfile
+  - scikit-learn
+  - h5py
+  - pyntcloud
+  - seaborn
+  - ninja
+  - pip:
+    - open3d==0.15.2
+
