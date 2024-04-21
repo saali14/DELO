@@ -1,6 +1,6 @@
 # DELO : Deep Evidential LiDAR Odometry using Partial Optimal Transport
 
-The implementation of the paper 'DELO : Deep Evidential LiDAR Odometry using Partial Optimal Transport' (ICCV2023). [`ArXiv`](https://arxiv.org/pdf/2308.07153.pdf)
+The implementation of the paper 'DELO : Deep Evidential LiDAR Odometry using Partial Optimal Transport' (ICCV2023). [`ArXiv`](https://arxiv.org/pdf/2308.07153.pdf), [`Project Page`](https://skazizali.com/delo.github.io/)
 
 ![pipeline](assets/img/DELO_Overview.png)
 
