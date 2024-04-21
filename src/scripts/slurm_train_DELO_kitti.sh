@@ -14,7 +14,7 @@
 path_to_conda="/home/users/Your_User_Name/miniconda3 (OR the CONDA You have)"
 module purge
 source ${path_to_conda}/bin/activate 
-conda activate LiDAR-RGBD-SLAM
+conda activate DELO
 
 echo "== JOB STARTED AT $(date)"
 echo "== Job ID: ${SLURM_JOBID}"
@@ -27,4 +27,4 @@ LOGDIR="./logs_KITTI"
 
 cd ..
 
-python3 train.py --acceleratorType cuda --model_name delo --dataset_type Kitti --noise_type downsample --train_data_dir "$KITTI_TRAIN_DATASET_PATH" --test_data_dir "$KITTI_TEST_DATASET_PATH" --log_dir $LOGDIR --periodic_save_dir $LOGDIR --max_epochs 200 --num_points 1024 --train_batch_size 16 --val_batch_size 16 --head partial
+python3 train.py --acceleratorType cuda --model_name delo --dataset_type Kitti --noise_type downsample --train_data_dir "$KITTI_TRAIN_DATASET_PATH" --test_data_dir "$KITTI_TEST_DATASET_PATH" --log_dir $LOGDIR --periodic_save_dir $LOGDIR --max_epochs 200 --num_points 1024 --train_batch_size 16 --val_batch_size 16 --head partial --use_evidence False
